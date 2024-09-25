@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+    <title>KNOTES App</title>
+
+</head>
+<body>
+    <header>
+        <nav class="mobile desktop tablet">
+
+            <div id="search-container">
+                <input id="search-input" type="search" placeholder="Buscar...">
+            </div>
+
+            <div class="mobile-buttons">
+                <button id="menu-btn"><i class='bx bx-menu' ></i></button>
+
+                <div id="menu" class="menu">
+                  <ul>
+                    <button id="menu-close-btn"><i class='bx bx-x' ></i></button>
+                    <li class="option-menu-mobile"><a href="index.html"><i class='bx bx-note'></i>Notas</a></li>
+                    <li class="option-menu-mobile"><a href="#"><i class='bx bxs-star' ></i>Favoritos</a></li>
+                    <li class="option-menu-mobile"><a href="#"><i class='bx bx-trash' ></i>Papeleria</a></li>
+                    <li class="option-menu-mobile"><a href="#"><i class='bx bx-box'></i>Archivados</a></li>
+                    <li class="option-menu-mobile"><a id="config-button"><i class='bx bxs-cog' ></i>Configuracion</a></li>
+                    <button id="dark-mode-btn"><i class='bx bxs-sun' ></i></button>
+                  </ul>
+                </div>
+            </div>
+            
+
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="list-header">
+                <div id="addNoteDiv" onclick="popup()">
+                    <i class='bx bxs-message-square-add'></i>
+                </div>
+                <div class="blankDiv"></div>
+                <div class="blankDiv"></div>
+            </div>
+
+            <div id="list-container">
+                <ul id="notes-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    
+    </footer>
+
+    <!--JavaScript-->
+    <script src="./JS/index.js"></script>
+</body>
+</html>
